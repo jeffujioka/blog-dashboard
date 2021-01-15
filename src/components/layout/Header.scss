@@ -1,0 +1,32 @@
+@import "../Settings";
+
+.header {
+  grid-area: menu;
+  background: linear-gradient(90deg, 
+            rgba(7,10,120,1) 25%, 
+            rgba(5,5,160,0.8) 60%, 
+            rgba(0,146,255,0.8) 100%);
+// }
+
+// .header-content {
+  // background-color: tomato;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.header-toggle {
+  height: 100%;
+  width: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}

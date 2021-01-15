@@ -1,0 +1,71 @@
+@import "../Settings";
+
+.user-dropdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+  padding: 0px 10px;
+}
+
+.user-dropdown:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+// when .user-dropdown:hover apply rules to .user-dropdown-content
+.user-dropdown:hover .user-dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.user-dropdown-button {
+  display: flex;
+  align-items: center;
+}
+
+.user-dropdown-img {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.user-dropdown-img > img{
+  max-height: 42px;
+  border-radius: 15px;
+}
+
+.user-dropdown-content {
+  position: fixed;
+  right: 0;
+  top: var(--menu-height);
+  min-width: 170px;
+  padding: 5px 15px;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: #000;
+  transition: visibility 0s, opacity 0.5s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.user-dropdown-content:hover {
+  visibility: visible;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.user-dropdown-content a {
+  color: #000;
+}
+
+.user-dropdown-content a:hover {
+  visibility: visible;
+  text-decoration: none;
+  background-color: #EDEDED;
+}
