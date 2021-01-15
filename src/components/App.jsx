@@ -3,11 +3,11 @@ import { Router } from 'react-router-dom';
 
 import './App.scss'
 
-import Contents from './layout/Contents';
 import Footer from './layout/Footer';
 import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
 import history from './history';
+import Routes from '../Routes';
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
       <Router history={history}>
         <Header title="Blog Dashboard" />
         <Sidebar />
-        <Contents />
+        <Routes />
         <Footer />
       </Router>
     </div>

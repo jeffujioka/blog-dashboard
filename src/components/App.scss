@@ -17,7 +17,7 @@ body {
     var(--footer-height);
   grid-template-areas: 
     "menu menu"
-    "sidebar contents"
+    "sidebar content"
     "sidebar footer";
   height: 100vh;
 }
