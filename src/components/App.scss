@@ -9,6 +9,7 @@ body {
 }
 
 .app {
+  background-color: seashell;
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
   grid-template-rows: 

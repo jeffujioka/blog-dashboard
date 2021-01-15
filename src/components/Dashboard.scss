@@ -1,4 +1,24 @@
 .dashboard {
   grid-area: content;
-  background-color: steelblue;
+  margin: 10px 10px;
+}
+
+.dashboard-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-title h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.page-title h1 > i {
+  margin-right: 10px;
+}
+
+.page-title h2 {
+  margin-top: 5px;
+  color: #777;
 }
