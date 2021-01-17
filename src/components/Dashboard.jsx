@@ -2,19 +2,13 @@ import './Dashboard.scss';
 
 import React from 'react';
 
+import PageTitle from './modules/PageTitle';
 import StatCard from './modules/StatCard';
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <div className="page-title">
-        <h1>
-          <i className="fa fa-home"></i>
-          Dashboard
-        </h1>
-        <h2>Stats</h2>
-      </div>
-      <hr style={{ color: 'slategray' }} />
+      <PageTitle icon="fa fa-home" title="Dashboard" subtitle="Stats" />
       <div className="dashboard-stats">
         <StatCard label="Categories" icon="fa fa-folder" color="#ee3322" />
         <StatCard label="Articles" icon="fa fa-file" color="#22aa22" />
