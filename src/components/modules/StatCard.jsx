@@ -3,13 +3,13 @@ import './StatCard.scss';
 import React from 'react';
 
 class StatCard extends React.Component {
-  state = { counter: 0 }
 
   render() {
-    const { label, icon, color } = this.props;
+    const { label, icon, color, value } = this.props;
     const iconColor = color || '#000';
     const iconClass = icon || 'fa fa-question';
 
+    console.log(value);
     return (
       <div className="stat-card">
         <div className="stat-card-icon">
@@ -20,7 +20,7 @@ class StatCard extends React.Component {
             { label }
           </span>
           <span className="stat-value">
-            { this.state.counter }
+            { value }
           </span>
         </div>
       </div>
