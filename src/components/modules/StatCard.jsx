@@ -6,12 +6,14 @@ class StatCard extends React.Component {
   state = { counter: 0 }
 
   render() {
-    const { label } = this.props;
+    const { label, icon, color } = this.props;
+    const iconColor = color || '#000';
+    const iconClass = icon || 'fa fa-question';
 
     return (
       <div className="stat-card">
         <div className="stat-card-icon">
-          <i className="fa fa-folder" />
+          <i className={iconClass} style={{ color: iconColor }} />
         </div>
         <div className="stat-card-info">
           <span className="stat-title">

@@ -16,9 +16,9 @@ const Dashboard = () => {
       </div>
       <hr style={{ color: 'slategray' }} />
       <div className="dashboard-stats">
-        <StatCard label="Categories" counter="12" />
-        <StatCard label="Articles" counter="56" />
-        <StatCard label="Users" counter="1059" />
+        <StatCard label="Categories" icon="fa fa-folder" color="#ee3322" />
+        <StatCard label="Articles" icon="fa fa-file" color="#22aa22" />
+        <StatCard label="Users" icon="fa fa-users" color="#1166aa" />
       </div>
     </div>
   );
